@@ -1,6 +1,6 @@
-# 🎬 Gledati - Your Ultimate Movie Explorer
+# 🎬 CineSense - Your Ultimate Movie Explorer
 
-Welcome to **Gledati**, a full-stack web application built using the **TMDB API** that allows users to explore trending movies, upcoming releases, movies by genre and language, and even track what's new on OTT platforms.
+Welcome to **CineSense**, a full-stack web application built using the **TMDB API** that allows users to explore trending movies, upcoming releases, movies by genre and language, and even track what's new on OTT platforms.
 
 
 ## 🚀 Features
