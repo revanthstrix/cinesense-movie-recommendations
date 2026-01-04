@@ -1,0 +1,201 @@
+.series-card1-wrapper {
+    margin: 16px;
+    padding: 12px;
+    background-color: #1e272e;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+    max-width: 240px;
+  }
+  
+  .series-card1-wrapper:hover {
+    transform: translateY(-4px);
+  }
+  
+  .series-card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .series-card1 img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .series-card1-info {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .series1-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+  
+  .series1-release-date {
+    font-size: 0.9rem;
+    color: #d2dae2;
+    margin-bottom: 8px;
+  }
+  
+  .series1-watchlist-btn {
+    padding: 6px 14px;
+    background-color: #9ece00;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .series1-watchlist-btn:hover {
+    background-color: #b7e309;
+  }
+  
+  .series1-watchlist-btn.added {
+    background-color: #636e72;
+    cursor: not-allowed;
+  }
+
+  .seasons-section {
+    padding: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .seasons-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap; /* ensure horizontal scroll */
+    width: max-content;
+  }
+  
+  /* Custom scrollbar */
+  .seasons-section::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .seasons-section::-webkit-scrollbar-track {
+    background: #1e1e1e;
+    border-radius: 10px;
+  }
+  
+  .seasons-section::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+  }
+  
+  .seasons-section::-webkit-scrollbar-thumb:hover {
+    background: #222121;
+  }
+
+  .similar-series-section {
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .similar-series-scroll {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #555 #222;
+  }
+  
+  .similar-series-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .similar-series-scroll::-webkit-scrollbar-track {
+    background: #222;
+    border-radius: 4px;
+  }
+  
+  .similar-series-scroll::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+  }
+  
+  .similar-series-card {
+    flex: 0 0 auto;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .similar-series-card img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  .similar-series-card:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  /* Horizontal scroll on small screens */
+  @media (max-width: 768px) {
+    .seasons-list {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding-bottom: 10px;
+      scroll-snap-type: x mandatory;
+    }
+  
+    .season-card {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+    }
+  }
+  
+  
+  .season-card {
+    background-color: #121212;
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    width: 200px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    font-size: 13px; /* reduce base text size */
+  }
+  
+  .season-card h3 {
+    font-size: 14px; /* smaller title */
+    margin: 6px 0;
+  }
+  
+  .season-card p {
+    margin: 2px 0;
+    font-size: 12px; /* smaller info text */
+    line-height: 1.4;
+  }
+  
+  
+  
+  .season-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .season-info {
+    height: auto;
+    
+    padding: 10px;
+    color: #fff;
+  }
+  
+  

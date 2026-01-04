@@ -1,0 +1,102 @@
+.movie-card-wrapper {
+    position: relative;
+    width: 220px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  
+  .movie-card-wrapper:hover {
+    transform: scale(1.03);
+  }
+  
+  .movie-card {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+  }
+  
+  .movie-card-info {
+    padding: 0.6rem 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    min-height: 90px;
+  }
+  
+  .movie-title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+  
+  .movie-release-date {
+    font-size: 0.85rem;
+    color: #ccc;
+    margin: 0.3rem 0 0;
+  }
+  
+  .movie-watchlist-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #b9ff40;
+    border: none;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+  }
+  
+  .movie-watchlist-btn:hover {
+    background-color: #a5e91e;
+  }
+  
+  .movie-watchlist-btn.added {
+    background-color: #4caf50;
+  }
+  
+  /* ✅ Responsive styles for small screens */
+  @media (max-width: 768px) {
+    .movie-card-wrapper {
+      width: 160px;
+    }
+  
+    .movie-card img {
+      height: 200px;
+    }
+  
+    .movie-title {
+      font-size: 0.9rem;
+    }
+  
+    .movie-release-date {
+      font-size: 0.75rem;
+    }
+  
+    .movie-watchlist-btn {
+      padding: 0.3rem 0.6rem;
+      font-size: 0.75rem;
+    }
+  }
+  
